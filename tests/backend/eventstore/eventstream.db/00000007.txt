@@ -1,0 +1,6 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockSold, portfoliosimulation.backend",
+  "Symbol": "JUN3.HAM",
+  "Id": "16a4b5e2-cb1d-4585-90a8-f9e9d71725ac",
+  "Timestamp": "2019-07-20T19:26:24.9427613+02:00"
+}

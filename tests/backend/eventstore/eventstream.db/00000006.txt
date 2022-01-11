@@ -1,0 +1,7 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "JUN3.HAM",
+  "Price": 23.84,
+  "Id": "0b9054b8-da6f-4c4e-ac79-a322ea9cfd75",
+  "Timestamp": "2019-07-20T19:25:42.7835258+02:00"
+}

@@ -1,0 +1,26 @@
+@startuml
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Component.puml
+
+'LAYOUT_WITH_LEGEND()
+
+Component(ui, "Frontend", "cli", "basic CLI frontend")
+Boundary(alias, "Message Handling", "") {
+    Component(pump, "MessagePump", "message bus", "Message Bus handles commands/queries/notifications")
+    Container_Boundary(pipeline, "Pipeline") {
+        Component(mgr, "Model Manager", "model manager", "creates and updates model")
+        Component(model, "Context Model", "model", "bespoke pipeline model (read-only)")
+        Component(proc, "Processor", "processor", "processes messages in context of Context Model")
+    }
+}
+ContainerDb(db, "Event Store", "Simple FS Json Store", "Stores Domain Events, Single Point of Truth")
+Component_Ext(stocks, "Stock Exchange Provider", "API", "Provides Market Data")
+
+Rel(ui, pump, "Cmd/Query", "Message")
+Rel_L(mgr, db, "Uses", "event sourcing")
+Rel(pump, mgr, "trigger", "message type")
+Rel(mgr, model, "creates", "event sourcing")
+Rel(pump, proc, "call", "msg, model")
+Rel(proc, model, "uses", "context")
+Rel(proc, stocks, "Query", "API")
+
+@enduml

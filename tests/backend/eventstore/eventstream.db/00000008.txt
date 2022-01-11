@@ -1,0 +1,7 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "SNE",
+  "Price": 53.66,
+  "Id": "208b1d1f-92d0-462a-90d2-d38bd616981d",
+  "Timestamp": "2019-07-20T19:27:38.9440002+02:00"
+}

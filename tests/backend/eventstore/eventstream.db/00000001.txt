@@ -1,0 +1,10 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend",
+  "Name": "Sony Corporation",
+  "Symbol": "SNE",
+  "Currenncy": "USD",
+  "Qty": 10,
+  "Price": 53.66,
+  "Id": "a459a046-77b6-4c28-8319-ba1241c399b8",
+  "Timestamp": "2019-07-20T19:24:09.263198+02:00"
+}

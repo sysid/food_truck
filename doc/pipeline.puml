@@ -1,0 +1,20 @@
+@startuml
+title Message Handler Pipeline
+actor user as u
+participant pump as p
+box message handler
+    participant model_mgr as mgr
+    participant model as m
+    participant processor as proc
+end box
+
+u->p:cmd
+activate p #FFAAAA
+p->mgr: trigger
+mgr->m: create
+m->p
+p->proc: call with model
+proc->p: result
+p->u: status
+
+@enduml

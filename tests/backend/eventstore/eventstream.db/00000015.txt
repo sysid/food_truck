@@ -1,0 +1,10 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend",
+  "Name": "Bayer Aktiengesellschaft",
+  "Symbol": "BAYRY",
+  "Currenncy": "USD",
+  "Qty": 30,
+  "Price": 16.74,
+  "Id": "df06ade2-f7a6-404b-b6b7-8c3536ee6cd7",
+  "Timestamp": "2019-07-20T19:34:18.0704688+02:00"
+}

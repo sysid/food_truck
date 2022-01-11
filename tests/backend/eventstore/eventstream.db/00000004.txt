@@ -1,0 +1,7 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "AAPL",
+  "Price": 202.59,
+  "Id": "5981087b-8d39-4d80-b428-a5c3116a2a65",
+  "Timestamp": "2019-07-20T19:24:44.6260074+02:00"
+}

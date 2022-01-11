@@ -1,0 +1,7 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockPriceUpdated, portfoliosimulation.backend",
+  "Symbol": "FBOK34.SAO",
+  "Price": 387.94,
+  "Id": "7b84023f-0dc9-4211-94ab-cc60a2f453b5",
+  "Timestamp": "2019-07-20T19:29:50.7283245+02:00"
+}

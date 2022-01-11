@@ -1,0 +1,10 @@
+{
+  "$type": "portfoliosimulation.backend.events.StockBought, portfoliosimulation.backend",
+  "Name": "JUNGHEINRICH AG O.N.VZO",
+  "Symbol": "JUN3.HAM",
+  "Currenncy": "EUR",
+  "Qty": 7,
+  "Price": 23.84,
+  "Id": "9d12ce38-3f92-4d5b-bc1b-177cfbed6f7a",
+  "Timestamp": "2019-07-20T19:25:42.7834991+02:00"
+}

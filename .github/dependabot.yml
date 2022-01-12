@@ -1,0 +1,13 @@
+---
+# dependabot.yml file with updates
+# disabled for Docker and limited for npm
+
+version: 2
+updates:
+  # Configuration for Dockerfile
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: daily    # weekly
+    # Disable all pull requests for Docker dependencies
+    # open-pull-requests-limit: 0

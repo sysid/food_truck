@@ -30,8 +30,8 @@ class Environment(BaseSettings):
     run_env: str
     log_level: str = "INFO"
 
-    # alpha_vantage_apikey: str = "6VBKDJ81BDRGDY68"
-    alpha_vantage_apikey: str = "xxxxxxxxx"
+    alpha_vantage_apikey: str = "6VBKDJ81BDRGDY68"
+    # alpha_vantage_apikey: str = "xxxxxxxxx"
     alpha_vantage_url: str = "https://www.alphavantage.co"
 
     def __init__(

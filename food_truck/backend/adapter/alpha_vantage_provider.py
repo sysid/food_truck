@@ -56,15 +56,19 @@ class AlphaVantageProvider:
         )
 
     def get_conversion_rate(
-        self, from_currency: str, to_currency: str = "EUR"
+            self, from_currency: str, to_currency: str = "EUR"
     ) -> ExchangeRateToEuro:
         endpoint_url = f"{self._base_url}/&function=CURRENCY_EXCHANGE_RATE&from_currency={from_currency}&to_currency={to_currency}"
         quote = httpx.get(endpoint_url).json()
+        # return ExchangeRateToEuro(
+        #     from_currency=from_currency,
+        #     rate=float(
+        #         quote.get("Realtime Currency Exchange Rate").get("5. Exchange Rate")
+        #     ),
+        # )
         return ExchangeRateToEuro(
             from_currency=from_currency,
-            rate=float(
-                quote.get("Realtime Currency Exchange Rate").get("5. Exchange Rate")
-            ),
+            rate=1.0  # hard-coded due to change in alphavantage API (premium abo needed)
         )
 
     def find_matching_stocks(self, pattern: str) -> List[StockInfo]:

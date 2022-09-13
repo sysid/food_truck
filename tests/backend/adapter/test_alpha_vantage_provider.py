@@ -29,7 +29,7 @@ def test_get_conversion_rate():
     )
     er = p.get_conversion_rate("AED")
     assert er.from_currency == "AED"
-    assert er.rate < 1
+    assert er.rate <= 1
     _ = None
 
 

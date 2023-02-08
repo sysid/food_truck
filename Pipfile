@@ -10,7 +10,7 @@ python_version = "3.10"
 #food_truck = {path = ".", editable = true}
 ipython = "*"
 python-json-logger = "*"
-sqlalchemy = "*"
+sqlalchemy = "<2"
 tenacity = "*"
 typer = "*"
 pydantic = "*"
